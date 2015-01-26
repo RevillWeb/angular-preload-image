@@ -16,7 +16,7 @@ bower install angular-preload-image
 angular.module('app', ['angular-preload-image']);
 ```
 
-#Useage
+#Usage
 
 ##Pre-load background images
 
