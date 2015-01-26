@@ -1,6 +1,6 @@
 #angular-preload-image
 
-A simple AngularJS module to make it easy to pre-load images to prevent the horrible waterfall effect: (Demo)[http://revillweb.github.io/angular-preload-image/].
+A simple AngularJS module to make it easy to pre-load images to prevent the horrible waterfall effect: [Demo](http://revillweb.github.io/angular-preload-image/).
 
 #Installation
 
