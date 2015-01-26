@@ -9,7 +9,7 @@ angular.module('angular-preload-image').factory('preLoader', function(){
         }).attr('src', url);
     }
 });
-angular.module('angular-preload-image').directive('preloadImage', function(preLoader){
+angular.module('angular-preload-image').directive('preloadImage', ['preLoader', function(preLoader){
     return {
         restrict: 'A',
         terminal: true,
@@ -27,8 +27,8 @@ angular.module('angular-preload-image').directive('preloadImage', function(preLo
             });
         }
     };
-});
-angular.module('angular-preload-image').directive('preloadBgImage', function(preLoader){
+}]);
+angular.module('angular-preload-image').directive('preloadBgImage', ['preLoader', function(preLoader){
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -52,4 +52,4 @@ angular.module('angular-preload-image').directive('preloadBgImage', function(pre
             }
         }
     };
-});
+}]);
