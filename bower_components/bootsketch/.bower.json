@@ -1,0 +1,24 @@
+{
+  "name": "bootsketch",
+  "version": "1.0.0",
+  "authors": [
+    "Yann Gouffon <hello@yago.io>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "1.10.2",
+    "Cortana": "~1.1.*",
+    "bootstrap-sass-official": "~3.1.1"
+  },
+  "homepage": "https://github.com/Yago/Bootsketch",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "cc51d374aeb1d7f1749c2bc66e28eb6bb3aa9a59"
+  },
+  "_source": "git://github.com/Yago/Bootsketch.git",
+  "_target": "~1.0.0",
+  "_originalSource": "bootsketch",
+  "_direct": true
+}

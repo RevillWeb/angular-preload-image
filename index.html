@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>AngularJS Preloader Module</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/bootsketch/build/css/bootsketch.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/prismjs/prism.css" />
+    <link rel="stylesheet" href="bower_components/prismjs/prism-twilight.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/prismjs/prism.js"></script>
+    <script src="bower_components/angular-preload-image/angular-preload-image.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body ng-controller="MainController as main">
+    <div class="header" preload-bg-image="http://wallpaperscraft.com/image/paper_crumpled_light_shadow_35117_1920x1080.jpg">
+        <h1>EASYILY PRE-LOAD IMAGES IN YOUR ANGULARJS APPS</h1>
+        <div class="buttons">
+            <a href="https://github.com/RevillWeb/angular-preload-image" class="btn btn-lg btn-default"><span class="fa fa-github"></span> GitHub</a>
+            <a href="http://www.revillweb.com/" target="_blank" class="btn btn-lg btn-primary"><span class="fa fa-home"></span> RevillWeb</a>
+        </div>
+        <div class="sharing-buttons">
+            <iframe src="https://ghbtns.com/github-btn.html?user=revillweb&repo=angular-preload-image&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=revillweb&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="revillweb" data-size="large">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+    </div>
+    <div class="content">
+        <h2>PRE-LOAD BACKGROUND IMAGES</h2>
+        <img src="images/arrow.png" id="arrow" />
+        <pre class="language-markup"><code class="language-markup">&lt;div preload-bg-image=&quot;[URL]&quot; default-image=&quot;[URL]&quot; fallback-image=&quot;[URL]&quot;&gt;&lt;/div&gt;</code></pre>
+        <h2>PRE-LOAD STANDARD IMAGES</h2>
+        <pre class="language-markup"><code class="language-markup">&lt;img preload-image ng-src=&quot;[URL]&quot; default-image=&quot;[URL]&quot; fallback-image=&quot;[URL]&quot; /&gt;</code></pre>
+        <ul class="list">
+            <li ng-repeat="image in main.images track by $index">
+                <div class="number">#{{$index + 1}}</div>
+                <img preload-image fallback-image="http://www.kerrdental.eu/res/global/product_515_275_noPhoto.jpg" ng-src="{{image}}" />
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

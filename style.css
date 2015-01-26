@@ -1,0 +1,72 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: url('images/paper.png');
+}
+.header {
+    padding-top: 50px;
+    background-color: #CCC;
+    border-bottom: solid 5px #CCC;
+}
+.header h1 {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #333;
+    font-size: 60px;
+    text-shadow: 2px 2px 0 #E1E1E1;
+}
+.header .buttons {
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+.header .sharing-buttons {
+    width: 530px;
+    margin: 0 auto 50px auto;
+}
+.content {
+    width: 870px;
+    margin: auto;
+    position: relative;
+}
+.content h2 {
+    font-size: 50px;
+}
+.list {
+    margin: 0 -50px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.list li {
+    width: 356px;
+    height: 203px;
+    display: inline-block;
+    margin: 10px 10px 10px 60px;
+    border: solid 3px #CCC;
+    position: relative;
+}
+.list li img {
+    width: 350px;
+    height: 197px;
+}
+.list li .number {
+    position: absolute;
+    width: 60px;
+    left: -75px;
+    top: -5px;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    color: #666;
+}
+#arrow {
+    position: absolute;
+    top: -75px;
+    left: -110px;
+}
+.language-markup {
+    /*height: 85px;*/
+    /*overflow: hidden !important;*/
+    font-size: 14px;
+}
