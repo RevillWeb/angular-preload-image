@@ -12,8 +12,10 @@ bower install angular-preload-image
 
 ##Include script files
 
+```html
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-preload-image/angular-preload-image.min.js"></script>
+```
 
 ##Add module dependency
 
