@@ -10,6 +10,11 @@ A simple AngularJS module to make it easy to pre-load images to prevent the horr
 bower install angular-preload-image
 ```
 
+##Include script files
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-preload-image/angular-preload-image.min.js"></script>
+
 ##Add module dependency
 
 ```javascript
