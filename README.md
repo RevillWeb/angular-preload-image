@@ -48,6 +48,7 @@ Check out the [demo](http://revillweb.github.io/angular-preload-image/) for an e
 #TO DO
 
 * Ability to know when all pre-loaded images have finished loading within the page
+* Extensive cross browser and device testing + fixes
  
 #Credit
 
