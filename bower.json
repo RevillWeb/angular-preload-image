@@ -1,11 +1,11 @@
 {
   "name": "angular-preload-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "leon <leon@revillwebdesign.com>"
   ],
   "description": "Easily pre-load images in your AngularJS apps",
-  "main": "angular-preload-image.min.js",
+  "main": "./angular-preload-image.js",
   "moduleType": [
     "amd"
   ],
